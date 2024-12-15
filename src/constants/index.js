@@ -23,10 +23,37 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    apachejmeter,
+    django,
+    java,
+    csharp,
+    python,
+    mysql,
+    sqlite,
+    selenium
 } from "../assets/icons";
 
 export const skills = [
+    {
+        imageUrl: java,
+        name: "Java",
+        type: "Programming Language",
+    },{
+        imageUrl: csharp,
+        name: "C#",
+        type: "programming Language",
+    },
+    
+    {
+        imageUrl: python,
+        name: "Python",
+        type: "Programming Language",
+    },
+    {
+        imageUrl: django,
+        name: "Django",
+        type: "Backend Framework",
+    },
     {
         imageUrl: css,
         name: "CSS",
@@ -37,21 +64,7 @@ export const skills = [
         name: "Express",
         type: "Backend",
     },
-    {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
-    },
-    {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
-    },
-    {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
-    },
+    
     {
         imageUrl: javascript,
         name: "JavaScript",
@@ -62,11 +75,11 @@ export const skills = [
         name: "MongoDB",
         type: "Database",
     },
-    /*{
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },*/
+    {
+        imageUrl: html,
+        name: "HTML",
+        type: "Frontend",
+    },
     {
         imageUrl: mui,
         name: "Material-UI",
@@ -87,26 +100,44 @@ export const skills = [
         name: "React",
         type: "Frontend",
     },
+    
     {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
+        imageUrl: sqlite,
+        name: "SQLite",
+        type: "Database",
     },
-    /*{
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },*/
+    {
+        imageUrl: mysql,
+        name: "MySQL",
+        type: "Database",
+    },
+    {
+        imageUrl: selenium,
+        name: "Selenium",
+        type: "Automation Testing Tool",
+    },
+    {
+        imageUrl: jmeter,
+        name: "JMeter",
+        type: "Performance Testing Tool",
+    },
     {
         imageUrl: tailwindcss,
         name: "Tailwind CSS",
         type: "Frontend",
     },
-    /*{
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
-    }*/
+    {
+        imageUrl: git,
+        name: "Git",
+        type: "Version Control",
+    },
+    {
+        imageUrl: github,
+        name: "GitHub",
+        type: "Version Control",
+    },
+    
+    
 ];
 
 /*export const experiences = [
