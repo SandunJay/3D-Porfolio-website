@@ -29,8 +29,10 @@ import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 import python from './python.svg'
+import django from './django.svg'
 
 export {
+    django,
     css,
     express,
     git,
