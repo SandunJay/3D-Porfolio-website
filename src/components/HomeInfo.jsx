@@ -1,7 +1,8 @@
 
 import { Link } from "react-router-dom";
 
-import { arrow } from "../assets/icons";
+import arrow from './arrow.svg'
+
 
 const HomeInfo = ({ currentStage }) => {
   if (currentStage === 1)
