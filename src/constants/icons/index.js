@@ -70,6 +70,9 @@ import twitter from './twitter.svg';
 import typescript from './typescript.svg';
 
 export {
+    apachejmeter,
+    selenium,
+    mysql,
     django,
     sqlite,
     css,
