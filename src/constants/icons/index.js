@@ -37,6 +37,7 @@ export {
     html,
     java,
     javascript,
+    csharp,
     mongodb,
     motion,
     mui,
