@@ -68,8 +68,18 @@ import tailwindcss from './tailwindcss.svg';
 import threads from './threads.svg';
 import twitter from './twitter.svg';
 import typescript from './typescript.svg';
+import mango from './mango.svg';
+import medishop from './medishop.svg';
+import rain from './rain.svg';
+import diamond from './diamond.svg';
+import building from './building.svg';
 
 export {
+    mango,
+    medishop,
+    rain,
+    diamond,
+    building,
     apachejmeter,
     selenium,
     mysql,
