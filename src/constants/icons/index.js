@@ -30,9 +30,11 @@ import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 import python from './python.svg'
 import django from './django.svg'
+import sqlite from './sqlite.svg'
 
 export {
     django,
+    sqlite,
     css,
     express,
     git,
