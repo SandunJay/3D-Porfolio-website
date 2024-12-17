@@ -117,7 +117,7 @@ export const skills = [
         type: "Automation Testing Tool",
     },
     {
-        imageUrl: jmeter,
+        imageUrl: apachejmeter,
         name: "JMeter",
         type: "Performance Testing Tool",
     },

@@ -4,10 +4,10 @@ import { Suspense, useEffect, useRef, useState } from "react";
 
 import sakura from "../assets/sound/sakura.mp3";
 import { HomeInfo, Loader } from "../components";
-// import { soundoff, soundon } from "../assets/icons";
-import soundon from './soundon.png'
-import soundoff from './soundoff.png'
-
+// import soundon as soundOn from './soundon.png'
+// import soundoff from './soundoff.png'
+import soundon from "../constants/icons/soundon.png";
+import soundoff from "../constants/icons/soundoff.png";
 
 import { Bird, Island, Plane, Sky } from "../models";
 
@@ -111,7 +111,7 @@ const Home = () => {
 
       <div className='absolute bottom-2 left-2'>
         <img
-          src={!isPlayingMusic ? soundOff : soundon}
+          src={!isPlayingMusic ? soundoff : soundon}
           alt='jukebox'
           onClick={() => setIsPlayingMusic(!isPlayingMusic)}
           className='w-10 h-10 cursor-pointer object-contain'
