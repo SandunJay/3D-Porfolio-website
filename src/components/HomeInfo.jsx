@@ -50,7 +50,7 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
       <p className='font-medium sm:text-xl text-center'>
-        Need a intern Quality Assuarance Engineer? <br/> I'm just a few keystrokes away
+        Need an intern for your company? <br/> I'm just a few keystrokes away
       </p>
 
       <Link to='/contact' className='neo-brutalism-white neo-btn'>
