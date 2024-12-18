@@ -30,8 +30,13 @@ import {
     python,
     mysql,
     sqlite,
-    selenium
-} from "../assets/icons";
+    selenium,
+    mango,
+    rain,
+    medishop,
+    building,
+    diamond,
+} from "./icons";
 
 export const skills = [
     {
@@ -117,7 +122,7 @@ export const skills = [
         type: "Automation Testing Tool",
     },
     {
-        imageUrl: jmeter,
+        imageUrl: apachejmeter,
         name: "JMeter",
         type: "Performance Testing Tool",
     },
@@ -139,62 +144,6 @@ export const skills = [
     
     
 ];
-
-/*export const experiences = [
-    {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-];*/
-
 export const socialLinks = [
     {
         name: 'Contact',
@@ -213,47 +162,95 @@ export const socialLinks = [
     }
 ];
 
+
 export const projects = [
     {
-        iconUrl: pricewise,
+        iconUrl: mango,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/Ksx657/Inventory_Management_System.git',
+        name: 'Magro Lanka Inventory System',
+        description: 'I developed an Inventory Management System for Magro Lanka Pvt Ltd using the MERN stack. The system streamlined inventory tracking and improved operational efficiency through a user-friendly interface and secure APIs.Technologies Used:MongoDB,Express.js,React.js,Node.js',
+        link: 'https://github.com/Ksx657/Inventory_Management_System',
     },
     {
-        iconUrl: threads,
+        iconUrl: medishop,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
+        name: 'MediShop',
+        description: 'I developed a Django application for a pharmaceutical shop to manage patient records and medicine inventory efficiently. The system ensures secure data handling, streamlines daily operations, and supports accurate tracking for improved service delivery.Technologies Used:Django',
+        link: 'https://github.com/kpkmaduwantha9/mediapplication',
     },
     {
-        iconUrl: car,
+        iconUrl: diamond,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        name: 'Jade ChatBot',
+        description: 'I created a chatbot using OpenAI GPT-4o designed to provide intelligent and interactive responses. The chatbot enhances user engagement by understanding and responding to queries in natural language, offering a seamless conversational experience.Technologies Used:OpenAi,Streamlit',
+        link: 'https://github.com/Ksx657/Jade-ChatBot',
     },
     {
-        iconUrl: snapgram,
+        iconUrl: linkedin,
         theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        name: 'LinkedIn Post Generator',
+        description: 'I developed a LinkedIn Post Generator that allows users to select a topic and desired post length, then automatically generates a LinkedIn post. This tool simplifies content creation by providing tailored, engaging posts for various topics.Technologies Used:llama 3model,Streamlit,pandas',
+        link: 'https://github.com/Ksx657/Jade-ChatBot',
     },
+    
     {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
-    },
-    {
-        iconUrl: summiz,
+        iconUrl: rain,
         theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
+        name: 'Rainfall Prediction System',
+        description: 'An ML model that predicts rainfall built using numpy,pandas and sci-kit Learn',
         link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
+    },
+    {
+        iconUrl: building,
+        theme: 'btn-back-yellow',
+        name: 'Real Estate Price Prediction Website',
+        description: 'This is a ML model that can predicts prices of the real estate when they give their requirements and complimented with an easy to use User Intraface.Technologies Used:numpy,pandas,sci-kit learn,Html,css',
+        link: 'https://github.com/Ksx657/real-estate-prediction-website',
+    }
+
 ];
+
+// export const projects = [
+//     {
+//         iconUrl: pricewise,
+//         theme: 'btn-back-red',
+//         name: 'Amazon Price Tracker',
+//         description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
+//         link: 'https://github.com/Ksx657/Inventory_Management_System.git',
+//     },
+//     {
+//         iconUrl: threads,
+//         theme: 'btn-back-green',
+//         name: 'Full Stack Threads Clone',
+//         description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
+//         link: 'https://github.com/adrianhajdin/threads',
+//     },
+//     {
+//         iconUrl: car,
+//         theme: 'btn-back-blue',
+//         name: 'Car Finding App',
+//         description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
+//         link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+//     },
+//     {
+//         iconUrl: snapgram,
+//         theme: 'btn-back-pink',
+//         name: 'Full Stack Instagram Clone',
+//         description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
+//         link: 'https://github.com/adrianhajdin/social_media_app',
+//     },
+//     {
+//         iconUrl: estate,
+//         theme: 'btn-back-black',
+//         name: 'Real-Estate Application',
+//         description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
+//         link: 'https://github.com/adrianhajdin/projects_realestate',
+//     },
+//     {
+//         iconUrl: summiz,
+//         theme: 'btn-back-yellow',
+//         name: 'AI Summarizer Application',
+//         description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
+//         link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+//     }
+// ];

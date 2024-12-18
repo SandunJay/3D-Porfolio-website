@@ -1,11 +1,15 @@
 
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useRef, useState } from "react";
+import { motion } from 'framer-motion'
 
 import sakura from "../assets/sound/sakura.mp3";
 import { HomeInfo, Loader } from "../components";
-import { soundoff, soundon } from "../assets/icons";
+import soundon from "../constants/icons/soundon.png";
+import soundoff from "../constants/icons/soundoff.png";
+
 import { Bird, Island, Plane, Sky } from "../models";
+import { ArrowRight } from "lucide-react";
 
 const Home = () => {
   const audioRef = useRef(new Audio(sakura));
@@ -14,7 +18,7 @@ const Home = () => {
 
   const [currentStage, setCurrentStage] = useState(1);
   const [isRotating, setIsRotating] = useState(false);
-  const [isPlayingMusic, setIsPlayingMusic] = useState(false);
+  const [isPlayingMusic, setIsPlayingMusic] = useState(true);
 
   useEffect(() => {
     if (isPlayingMusic) {
@@ -105,6 +109,7 @@ const Home = () => {
         </Suspense>
       </Canvas>
 
+
       <div className='absolute bottom-2 left-2'>
         <img
           src={!isPlayingMusic ? soundoff : soundon}
@@ -113,6 +118,28 @@ const Home = () => {
           className='w-10 h-10 cursor-pointer object-contain'
         />
       </div>
+
+      <motion.div
+        className="fixed bottom-10 left-1/2 transform -translate-x-1/2 z-20 pointer-events-none"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5 }}
+      >
+        <motion.div
+          className="flex items-center space-x-2 border border-white rounded-full px-6 py-3 text-white bg-opacity-50 backdrop-blur-sm"
+          animate={{
+            x: [0, 10, 0],
+          }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        >
+          <span className="text-lg font-semibold">Press Right Arrow</span>
+          <ArrowRight className="w-6 h-6" />
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
