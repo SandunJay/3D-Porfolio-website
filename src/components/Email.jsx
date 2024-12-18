@@ -17,10 +17,10 @@ const EmailForm = ({ onClose }) => {
     if (form.current) {
       emailjs
         .sendForm(
-          "YOUR_SERVICE_ID",
-          "YOUR_TEMPLATE_ID",
+          "service_7tvs1ix",
+          "template_266pjkl",
           form.current,
-          "YOUR_USER_ID"
+          "h8qiUhkot-wfqvH5iybv4"
         )
         .then(
           () => {
